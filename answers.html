@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Submit Your Answers</title>
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    input[type="number"] {
+      -moz-appearance: textfield;
+      appearance: textfield;
+    }
+    input[type="number"]::-webkit-inner-spin-button,
+    input[type="number"]::-webkit-outer-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+
+    .case-title {
+      text-align: center;
+      font-family: 'Anonymous Pro', monospace;
+      font-size: 26px;
+      color: #203b31;
+      margin-bottom: 5px;
+      margin-top: 30px;
+    }
+
+    .back-button {
+      display: inline-block;
+      margin-bottom: 25px;
+      font-family: 'Anonymous Pro', monospace;
+      color: #203b31;
+      text-decoration: none;
+      font-size: 32px;
+      margin-left: 20px;
+    }
+
+    .back-button:hover {
+      color: #cf4f21;
+    }
+  </style>
+</head>
+
+<body>
+
+<a href="index.html" class="back-button">←</a>
+
+<h2 class="case-title">CASE 001: The Last Letter from Italy</h2>
+
+<h1>Enter Your 10 Answers</h1>
+
+<form id="answers-form">
+  <label for="a1">Puzzle 1</label>
+  <input id="a1" type="number">
+
+  <label for="a2">Puzzle 2</label>
+  <input id="a2" type="number">
+
+  <label for="a3">Puzzle 3</label>
+  <input id="a3" type="number">
+
+  <label for="a4">Puzzle 4</label>
+  <input id="a4" type="number">
+
+  <label for="a5">Puzzle 5</label>
+  <input id="a5" type="number">
+
+  <label for="a6">Puzzle 6</label>
+  <input id="a6" type="number">
+
+  <label for="a7">Puzzle 7</label>
+  <input id="a7" type="number">
+
+  <label for="a8">Puzzle 8</label>
+  <input id="a8" type="number">
+
+  <label for="a9">Puzzle 9</label>
+  <input id="a9" type="number">
+
+  <label for="a10">Puzzle 10</label>
+  <input id="a10" type="number">
+
+  <button type="button" onclick="checkAnswers()">Check Answers</button>
+</form>
+
+<div id="secret-message">
+  <h2>Complimenti, esteemed inspectors!</h2>
+  <p>
+    Getting here took sharp eyes, a feel for linguistic nuance, clever deduction,
+    and some serious thinking outside the box. You counted, decoded, compared,
+    folded, and puzzled your way through every challenge. Ten mysteries stood in
+    your path, and not one remained unsolved. You cracked them all!
+  </p>
+  <p>
+    Celebrate your success and stay sharp. Your next mystery may be closer than you think!
+  </p>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+

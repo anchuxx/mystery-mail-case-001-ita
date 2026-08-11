@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Mystery Mail – Clues</title>
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    .back-button {
+      display: inline-block;
+      margin-bottom: 25px;
+      font-family: 'Anonymous Pro', monospace;
+      color: #203b31;
+      text-decoration: none;
+      font-size: 32px;
+    }
+
+    .back-button:hover {
+      color: #cf4f21;
+    }
+
+    .badge {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .badge h2 {
+      font-family: 'Anonymous Pro', monospace;
+      font-size: 26px;
+      color: #203b31;
+      margin-bottom: 5px;
+    }
+
+    .badge .underline {
+      width: 260px;
+      height: 3px;
+      background-color: #cf4f21;
+      margin: 0 auto;
+    }
+
+    .puzzle-block {
+      background-color: #fffdf7;
+      border: 2px solid #203b31;
+      border-radius: 8px;
+      padding: 20px;
+      margin-bottom: 30px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+      transition: transform 0.15s ease, box-shadow 0.15s ease;
+    }
+
+    .puzzle-block:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+
+    .puzzle-title {
+      font-size: 22px;
+      font-weight: bold;
+      color: #cf4f21;
+      margin-bottom: 15px;
+    }
+
+    .dropdown-button {
+      width: 100%;
+      padding: 12px;
+      margin-top: 10px;
+      border: 2px solid #203b31;
+      border-radius: 6px;
+      background-color: #fffdf7;
+      font-family: 'Anonymous Pro', monospace;
+      font-size: 16px;
+      cursor: pointer;
+      text-align: left;
+      position: relative;
+      color: #203b31;
+    }
+
+    .dropdown-button:hover {
+      border-color: #cf4f21;
+    }
+
+    .dropdown-button::after {
+      content: "▼";
+      position: absolute;
+      right: 12px;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 14px;
+      color: #203b31;
+    }
+
+    .clue-text {
+      margin-top: 10px;
+      padding: 10px;
+      background-color: #fffdf7;
+      border-left: 3px solid #cf4f21;
+      display: none;
+      white-space: normal;
+      line-height: 1.5;
+    }
+  </style>
+
+  <script>
+    function toggleClue(clueId) {
+      const clueBox = document.getElementById(clueId);
+      clueBox.style.display = clueBox.style.display === "block" ? "none" : "block";
+    }
+  </script>
+</head>
+
+<body>
+
+<a href="index.html" class="back-button">←</a>
+
+<div class="badge">
+  <h2>CASE 001: The Last Letter from Italy</h2>
+  <div class="underline"></div>
+</div>
+
+<h1>Mystery Mail – Clues</h1>
+
+<!-- Puzzle 1 -->
+<div class="puzzle-block">
+  <div class="puzzle-title">Puzzle 1</div>
+
+  <button class="dropdown-button" onclick="toggleClue('clue1-1')">Clue 1</button>
+  <div id="clue1-1" class="clue-text">
+    The center of the postcard may not be the best place to focus.
+  </div>
+
+  <button class="dropdown-button" onclick="toggleClue('clue1-2')">Clue 2</button>
+  <div id="clue1-2" class="clue-text">
+    Search along the left side of the postcard.
+  </div>
+
+  <button class="dropdown-button" onclick="toggleClue('answer1')">Answer</button>
+  <div id="answer1" class="clue-text">
+    9
+  </div>
+</div>
+
+<!-- Puzzle 2 -->
+<div class="puzzle-block">
+  <div class="puzzle-title">Puzzle 2</div>
+
+  <button class="dropdown-button" onclick="toggleClue('clue2-1')">Clue 1</button>
+  <div id="clue2-1" class="clue-text">
+    “The faithful return every Sunday” points to a pattern.
+  </div>
+
+  <button class="dropdown-button" onclick="toggleClue('clue2-2')">Clue 2</button>
+  <div id="clue2-2" class="clue-text">
+    Sunday returns every seven days. Try applying that number to the words in the paragraph.
+  </div>
+
+  <button class="dropdown-button" onclick="toggleClue('answer2')">Answer</button>
+  <div id="answer2" class="clue-text">
+    28
+  </div>
+</div>
+
+<!-- Puzzle 3 -->
+<div class="puzzle-block">
+  <div class="puzzle-title">Puzzle 3</div>
+
+  <button class="dropdown-button" onclick="toggleClue('clue3-1')">Clue 1</button>
+  <div id="clue3-1" class="clue-text">
+    Something in the background may help you narrow down what to count.
+  </div>
+
+  <button class="dropdown-button" onclick="toggleClue('clue3-2')">Clue 2</button>
+  <div id="clue3-2" class="clue-text">
+    Consider which scooter colours best represent the country where this photograph was taken.
+  </div>
+
+  <button class="dropdown-button" onclick="toggleClue('answer3')">Answer</button>
+  <div id="answer3" class="clue-text">
+    17
+  </div>
+</div>
+
+<!-- Puzzle 4 -->
+<div class="puzzle-block">
+  <div class="puzzle-title">Puzzle 4</div>
+
+  <button class="dropdown-button" onclick="toggleClue('clue4-1')">Clue 1</button>
+  <div id="clue4-1" class="clue-text">
+    The third word in the encrypted sentence is a useful starting point for identifying the letters.
+  </div>
+
+  <button class="dropdown-button" onclick="toggleClue('clue4-2')">Clue 2</button>
+  <div id="clue4-2" class="clue-text">
+    Notice that the two letters after the apostrophe are different, which considerably limits the possibilities.
+  </div>
+
+  <button class="dropdown-button" onclick="toggleClue('answer4')">Answer</button>
+  <div id="answer4" class="clue-text">
+    8
+  </div>
+</div>
+
+<!-- Puzzle 5 -->
+<div class="puzzle-block">
+  <div class="puzzle-title">Puzzle 5</div>
+
+  <button class="dropdown-button" onclick="toggleClue('clue5-1')">Clue 1</button>
+  <div id="clue5-1" class="clue-text">
+    The references to an “ancient empire” and “matters of capital importance” were chosen deliberately. What familiar system might connect these ideas?
+  </div>
+
+  <button class="dropdown-button" onclick="toggleClue('clue5-2')">Clue 2</button>
+  <div id="clue5-2" class="clue-text">
+    Focus on the headline. Some of its letters may have more than just linguistic value.
+  </div>
+
+  <button class="dropdown-button" onclick="toggleClue('answer5')">Answer</button>
+  <div id="answer5" class="clue-text">
+    647
+  </div>
+</div>
+
+<!-- Puzzle 6 -->
+<div class="puzzle-block">
+  <div class="puzzle-title">Puzzle 6</div>
+
+  <button class="dropdown-button" onclick="toggleClue('clue6-1')">Clue 1</button>
+  <div id="clue6-1" class="clue-text">
+    The warning is more than routine security advice. Compare the information on both items carefully.
+  </div>
+
+  <button class="dropdown-button" onclick="toggleClue('clue6-2')">Clue 2</button>
+  <div id="clue6-2" class="clue-text">
+    One detail about the circuit does not match across the two documents. Once you find it, the word “difference” will tell you what to do next.
+  </div>
+
+  <button class="dropdown-button" onclick="toggleClue('answer6')">Answer</button>
+  <div id="answer6" class="clue-text">
+    54
+  </div>
+</div>
+
+<!-- Puzzle 7 -->
+<div class="puzzle-block">
+  <div class="puzzle-title">Puzzle 7</div>
+
+  <button class="dropdown-button" onclick="toggleClue('clue7-1')">Clue 1</button>
+  <div id="clue7-1" class="clue-text">
+    Read the vocabulary introduction closely. Two phrases hint at what to do with the words below.
+  </div>
+
+  <button class="dropdown-button" onclick="toggleClue('clue7-2')">Clue 2</button>
+  <div id="clue7-2" class="clue-text">
+    Each Italian word hides an English word among its letters. Together, the answers form an incomplete set.
+  </div>
+
+  <button class="dropdown-button" onclick="toggleClue('answer7')">Answer</button>
+  <div id="answer7" class="clue-text">
+    2
+  </div>
+</div>
+
+<!-- Puzzle 8 -->
+<div class="puzzle-block">
+  <div class="puzzle-title">Puzzle 8</div>
+
+  <button class="dropdown-button" onclick="toggleClue('clue8-1')">Clue 1</button>
+  <div id="clue8-1" class="clue-text">
+    First eliminate every location the traveller says he avoided. Then use the quantities and journey details to narrow down the remaining stops.
+  </div>
+
+  <button class="dropdown-button" onclick="toggleClue('clue8-2')">Clue 2</button>
+  <div id="clue8-2" class="clue-text">
+    Some stops are described by type rather than name. For example, museums and galleries are all “places of art.”
+  </div>
+
+  <button class="dropdown-button" onclick="toggleClue('answer8')">Answer</button>
+  <div id="answer8" class="clue-text">
+    11
+  </div>
+</div>
+
+<!-- Puzzle 9 -->
+<div class="puzzle-block">
+  <div class="puzzle-title">Puzzle 9</div>
+
+  <button class="dropdown-button" onclick="toggleClue('clue9-1')">Clue 1</button>
+  <div id="clue9-1" class="clue-text">
+    The ten elements mentioned throughout the poem can all be found hidden within the painting.
+  </div>
+
+  <button class="dropdown-button" onclick="toggleClue('clue9-2')">Clue 2</button>
+  <div id="clue9-2" class="clue-text">
+    The page itself may need to change shape for the five pairs to “meet”.
+  </div>
+
+  <button class="dropdown-button" onclick="toggleClue('answer9')">Answer</button>
+  <div id="answer9" class="clue-text">
+    35
+  </div>
+</div>
+
+<!-- Puzzle 10 -->
+<div class="puzzle-block">
+  <div class="puzzle-title">Puzzle 10</div>
+
+  <button class="dropdown-button" onclick="toggleClue('clue10-1')">Clue 1</button>
+  <div id="clue10-1" class="clue-text">
+    “RSVP” is more than a request for a reply. You may have encountered these four letters somewhere during your journey.
+  </div>
+
+  <button class="dropdown-button" onclick="toggleClue('clue10-2')">Clue 2</button>
+  <div id="clue10-2" class="clue-text">
+    Return to puzzles 1, 5, 6, and 7.
+  </div>
+
+  <button class="dropdown-button" onclick="toggleClue('answer10')">Answer</button>
+  <div id="answer10" class="clue-text">
+    9643
+  </div>
+</div>
+
+</body>
+</html>
+
+
