@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Submit Your Evidence</title>
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    .case-title {
+      text-align: center;
+      font-family: 'Anonymous Pro', monospace;
+      font-size: 26px;
+      color: #203b31;
+      margin-bottom: 5px;
+      margin-top: 30px;
+    }
+
+    .back-button {
+      display: inline-block;
+      margin-bottom: 25px;
+      font-family: 'Anonymous Pro', monospace;
+      color: #203b31;
+      text-decoration: none;
+      font-size: 32px;
+      margin-left: 20px;
+    }
+
+    .back-button:hover {
+      color: #cf4f21;
+    }
+
+    .letter-fragment {
+      display: none;
+      max-width: 700px;
+      margin: 25px auto 35px auto;
+      padding: 25px;
+      border: 1px solid #203b31;
+      background: #faf8f3;
+    }
+
+    .letter-fragment h2 {
+      font-family: 'Anonymous Pro', monospace;
+      color: #203b31;
+      margin-top: 0;
+    }
+
+    .letter-fragment p {
+      line-height: 1.6;
+      margin-bottom: 14px;
+    }
+
+    .locked-fragment {
+      max-width: 700px;
+      margin: 20px auto 35px auto;
+      padding: 16px 22px;
+      border: 1px dashed #aaa;
+      opacity: 0.65;
+      text-align: center;
+    }
+
+    .locked-fragment h3 {
+      margin: 0;
+      font-family: 'Anonymous Pro', monospace;
+      color: #666;
+    }
+
+    .locked-fragment p {
+      margin: 7px 0 0 0;
+      font-size: 14px;
+    }
+
+    #puzzle-10-status {
+      display: none;
+      max-width: 700px;
+      margin: 15px auto 25px auto;
+      padding: 16px 22px;
+      border: 1px solid #203b31;
+      background: #faf8f3;
+      text-align: center;
+    }
+
+    #puzzle-10-status p {
+      margin: 0;
+      line-height: 1.5;
+    }
+
+    #grand-finale {
+      display: none;
+      max-width: 700px;
+      margin: 35px auto;
+      padding: 30px;
+      border: 2px solid #cf4f21;
+      background: #faf8f3;
+    }
+
+    #grand-finale h2,
+    #grand-finale h3 {
+      text-align: center;
+      font-family: 'Anonymous Pro', monospace;
+      color: #203b31;
+    }
+
+    #grand-finale p {
+      line-height: 1.6;
+      margin-bottom: 14px;
+    }
+  </style>
+</head>
+
+<body>
+
+<a href="index.html" class="back-button">←</a>
+
+<h2 class="case-title">CASE 001: The Last Letter from Italy</h2>
+
+<h1>Submit Your Evidence</h1>
+
+<form id="answers-form">
+
+  <!-- PUZZLES 1 + 2 -->
+
+  <label for="a1">Puzzle 1</label>
+  <input id="a1" type="text" inputmode="numeric" pattern="[0-9]*">
+
+  <label for="a2">Puzzle 2</label>
+  <input id="a2" type="text" inputmode="numeric" pattern="[0-9]*">
+
+  <div id="locked-fragment-1" class="locked-fragment">
+    <h3>Letter Fragment I</h3>
+    <p>Solve Puzzles 1 &amp; 2 to recover this section.</p>
+  </div>
+
+  <div id="fragment-1" class="letter-fragment">
+    <h2>Letter Fragment I</h2>
+
+    <p><strong>My dear friend,</strong></p>
+
+    <p>
+      I followed the paperwork first. One name appeared where it shouldn't have, then another. Different collections, different cities — but the same intermediary quietly attached to each transfer.
+    </p>
+
+    <p>
+      By the time I reached Rome, I had found three paintings with histories that looked perfect on paper and fell apart under closer inspection. This was no isolated substitution. Someone had built a system for making originals disappear without anyone realising they were gone.
+    </p>
+
+    <p>
+      Yesterday, I found the first trace of how they communicate. I am following it.
+    </p>
+  </div>
+
+
+  <!-- PUZZLES 3 + 4 -->
+
+  <label for="a3">Puzzle 3</label>
+  <input id="a3" type="text" inputmode="numeric" pattern="[0-9]*">
+
+  <label for="a4">Puzzle 4</label>
+  <input id="a4" type="text" inputmode="numeric" pattern="[0-9]*">
+
+  <div id="locked-fragment-2" class="locked-fragment">
+    <h3>Letter Fragment II</h3>
+    <p>Solve Puzzles 3 &amp; 4 to recover this section.</p>
+  </div>
+
+  <div id="fragment-2" class="letter-fragment">
+    <h2>Letter Fragment II</h2>
+
+    <p>
+      Their messages are hidden inside ordinary things — photographs, advertisements, tickets, tourist leaflets. Nothing incriminating on its own. Only someone who knows where to look would ever notice.
+    </p>
+
+    <p>
+      I learned that yesterday. I also noticed the same man for the second time. By evening, an encrypted message had been slipped beneath my hotel-room door.
+    </p>
+
+    <p>
+      It contained no threat. It did not need one. They knew which room was mine.
+    </p>
+
+    <p>
+      The next courier is heading north. So am I.
+    </p>
+  </div>
+
+
+  <!-- PUZZLES 5 + 6 -->
+
+  <label for="a5">Puzzle 5</label>
+  <input id="a5" type="text" inputmode="numeric" pattern="[0-9]*">
+
+  <label for="a6">Puzzle 6</label>
+  <input id="a6" type="text" inputmode="numeric" pattern="[0-9]*">
+
+  <div id="locked-fragment-3" class="locked-fragment">
+    <h3>Letter Fragment III</h3>
+    <p>Solve Puzzles 5 &amp; 6 to recover this section.</p>
+  </div>
+
+  <div id="fragment-3" class="letter-fragment">
+    <h2>Letter Fragment III</h2>
+
+    <p>
+      Monza finally showed me what I had been missing. The courier's ticket was counterfeit — almost flawless, except for two figures in the wrong order.
+    </p>
+
+    <p>
+      I had seen that exact mistake before, on one of the painting's documents. It wasn't carelessness. It was a signature.
+    </p>
+
+    <p>
+      The same people producing false paperwork are producing the copies themselves. They don't steal a painting and leave an empty wall behind. They replace it. The forgery stays where the original once hung, while the genuine work disappears unnoticed.
+    </p>
+
+    <p>
+      The trail continues to Florence. And I am no longer certain I am the only one following it.
+    </p>
+  </div>
+
+
+  <!-- PUZZLES 7 + 8 -->
+
+  <label for="a7">Puzzle 7</label>
+  <input id="a7" type="text" inputmode="numeric" pattern="[0-9]*">
+
+  <label for="a8">Puzzle 8</label>
+  <input id="a8" type="text" inputmode="numeric" pattern="[0-9]*">
+
+  <div id="locked-fragment-4" class="locked-fragment">
+    <h3>Letter Fragment IV</h3>
+    <p>Solve Puzzles 7 &amp; 8 to recover this section.</p>
+  </div>
+
+  <div id="fragment-4" class="letter-fragment">
+    <h2>Letter Fragment IV</h2>
+
+    <p>
+      I was followed through Florence. I changed direction, crossed the river and avoided the obvious streets until I reached the one person who could confirm what I needed to know.
+    </p>
+
+    <p>
+      He had worked on the original years ago. There is a mark beneath its surface that the copy does not have. The original is still in Italy.
+    </p>
+
+    <p>
+      Tomorrow night, it will be taken to a private masquerade in <strong>Venice</strong>.
+    </p>
+
+    <p>
+      I also know now that we have been looking in the wrong direction. The courier did not arrange this. Neither did the forger. Someone much closer to the painting did.
+    </p>
+
+    <p>
+      I cannot put the name in this letter. Not yet.
+    </p>
+  </div>
+
+
+  <!-- PUZZLE 9 -->
+
+  <label for="a9">Puzzle 9</label>
+  <input id="a9" type="text" inputmode="numeric" pattern="[0-9]*">
+
+  <div id="locked-fragment-5" class="locked-fragment">
+    <h3>Final Letter Fragment</h3>
+    <p>Solve Puzzle 9 to recover this section.</p>
+  </div>
+
+  <div id="fragment-5" class="letter-fragment">
+    <h2>Final Letter Fragment</h2>
+
+    <p>
+      If you have recovered this, then you know where the trail ends. The courier did not arrange the theft. Neither did the forger.
+    </p>
+
+    <p>
+      The person behind it is the painting's <strong>owner</strong>. He commissioned the copy himself, replaced the original, and now intends to sell the genuine painting privately in Venice while everyone still believes it hangs safely in his collection.
+    </p>
+
+    <p>
+      The masquerade is the handover. I have hidden the final access code across the evidence I sent you.
+    </p>
+
+    <p>
+      Find it. If you reach the exchange before they do, there may still be time.
+    </p>
+
+    <p>— <strong>Lucia</strong></p>
+  </div>
+
+
+  <!-- PUZZLE 10 -->
+
+  <label for="a10">Puzzle 10</label>
+  <input id="a10" type="text" inputmode="numeric" pattern="[0-9]*">
+
+  <div id="puzzle-10-status">
+    <p>
+      <strong>RSVP code verified.</strong><br>
+      Complete the remaining investigation to proceed.
+    </p>
+  </div>
+
+
+  <!-- CHECK BUTTON -->
+
+  <button type="button" onclick="checkAnswers()">Check Answers</button>
+
+
+  <!-- FINALE LOCKED -->
+
+  <div id="locked-finale" class="locked-fragment">
+    <h3>Final Case Report</h3>
+    <p>
+      Recover Lucia's final letter and complete the investigation to unlock the final case report.
+    </p>
+  </div>
+
+
+  <!-- GRAND FINALE -->
+
+  <div id="grand-finale">
+
+    <h2>ACCESS CODE ACCEPTED — 9643</h2>
+
+    <p>
+      Investigators entered the Venetian masquerade before the exchange could be completed. The original painting was recovered, and evidence found at the scene linked the operation to several other suspected substitutions.
+    </p>
+
+    <p>
+      The owner and buyer were detained.
+    </p>
+
+    <p>
+      And Lucia Moretti? <strong>She was found the following morning. Alive.</strong>
+    </p>
+
+    <p>
+      Her disappearance had been deliberate. She had kept the network watching her long enough for the evidence to reach you unnoticed.
+    </p>
+
+    <p>
+      They thought Lucia was carrying the one thing that could expose them. They were wrong.
+    </p>
+
+    <p><strong>You were.</strong></p>
+
+    <h3>CASE CLOSED</h3>
+
+    <p style="text-align:center;">
+      <strong>Complimenti, Esteemed Inspectors!</strong>
+    </p>
+
+    <p style="text-align:center;">
+      You have recovered <strong>The Last Letter from Italy</strong>.
+    </p>
+
+  </div>
+
+</form>
+
+<script src="script.js"></script>
+
+</body>
+</html>
